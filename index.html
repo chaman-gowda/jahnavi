@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jahnavi, Will You Be My Valentine? ❤️</h1>
+        <p>Jahnavi, this Valentine's Day, there's no one else I'd rather spend it with than you.</p>
+        <button onclick="showAnswer('yes')">Yes</button>
+        <button onclick="showAnswer('no')">No</button>
+    </div>
+
+    <div id="response" class="response"></div>
+
+    <script>
+        function showAnswer(answer) {
+            const responseDiv = document.getElementById("response");
+            if (answer === 'yes') {
+                responseDiv.innerHTML = "<h2>Yay, Jahnavi! I can't wait to spend Valentine's Day with you! 💕</h2>";
+                responseDiv.style.color = "green";
+            } else {
+                responseDiv.innerHTML = "<h2>Are you sure, Jahnavi? Think again! 😜</h2>";
+                responseDiv.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
