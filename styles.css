@@ -2,35 +2,48 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: #fff8f0;
     color: #333;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
 }
 
+/* Header Styling */
 header {
     text-align: center;
-    background: #ff7f7f;
-    color: white;
     padding: 2rem 0;
+    background: rgba(255, 127, 127, 0.9);
+    color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header-image {
+    max-width: 80px;
+    display: block;
+    margin: 0 auto 1rem;
 }
 
 h1 {
     font-size: 2.5rem;
     margin: 0;
+    animation: fadeIn 2s ease;
 }
 
+/* Main Content */
 main {
     max-width: 800px;
     margin: 2rem auto;
-    padding: 0 1rem;
     text-align: center;
+    padding: 0 1rem;
 }
 
 #reason-section {
-    background: #fff4f4;
-    border: 1px solid #ffb3b3;
-    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
     margin-bottom: 2rem;
+    animation: fadeIn 1.5s ease;
 }
 
 #reason {
@@ -47,16 +60,33 @@ main {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .cta button:hover {
     background: #ff4d4d;
+    transform: scale(1.1);
 }
 
+/* Footer */
 footer {
     text-align: center;
     margin-top: 2rem;
     font-size: 0.9rem;
-    color: #888;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
