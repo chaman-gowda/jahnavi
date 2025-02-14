@@ -3,30 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Will You Be My Valentine?</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>25 Things I Love About You</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Jahnavi (Oopy Goopy Schmukums Smukums),</h1>
-        <p>Will you be my Valentine?</p>
-        <button onclick="showAnswer('yes')">Yes</button>
-        <button onclick="showAnswer('no')">No</button>
-    </div>
-
-    <div id="response" class="response"></div>
-
-    <script>
-        function showAnswer(answer) {
-            const responseDiv = document.getElementById("response");
-            if (answer === 'yes') {
-                responseDiv.innerHTML = "<h2>Jahnavi, you are my goat! 🐐</h2>";
-                responseDiv.style.color = "green";
-            } else {
-                responseDiv.innerHTML = "<h2>Baby please, try again! 😢</h2>";
-                responseDiv.style.color = "red";
-            }
-        }
-    </script>
+    <header>
+        <h1>25 Things I Love About You ❤️</h1>
+    </header>
+    <main>
+        <section id="reason-section">
+            <h2 id="reason">Ready to see why I love you?</h2>
+        </section>
+        <section class="cta">
+            <button id="next-button">Next</button>
+        </section>
+    </main>
+    <footer>
+        <p>Made with infinite love by someone who adores you 💖</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
