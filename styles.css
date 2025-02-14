@@ -1,45 +1,62 @@
-/* styles.css */
+/* General Reset */
 body {
-    font-family: Arial, sans-serif;
-    background: url('https://source.unsplash.com/1600x900/?romance,flowers') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding: 50px;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #fff8f0;
+    color: #333;
 }
 
-.container {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 30px;
-    border-radius: 10px;
+header {
+    text-align: center;
+    background: #ff7f7f;
+    color: white;
+    padding: 2rem 0;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin: 0;
 }
 
-p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
 }
 
-button {
-    background: #ff6b81;
+#reason-section {
+    background: #fff4f4;
+    border: 1px solid #ffb3b3;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+#reason {
+    font-size: 1.8rem;
+    color: #ff6f6f;
+    margin: 0;
+}
+
+.cta button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    background: #ff6f6f;
     color: white;
     border: none;
-    padding: 15px 30px;
-    font-size: 1rem;
-    margin: 10px;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background 0.3s;
 }
 
-button:hover {
-    background: #ff4757;
+.cta button:hover {
+    background: #ff4d4d;
 }
 
-.response {
-    margin-top: 30px;
-    font-size: 1.5rem;
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #888;
 }
